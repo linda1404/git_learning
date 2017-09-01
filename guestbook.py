@@ -7,7 +7,7 @@ def index():
 	return '<h1>Hello there!<h1>'
 
 # Adding in variables into the route name
-@app.route('/home/<place>')
+@app.route('/home/<place>', methods = ['GET', 'POST'])
 def home(place):
 	return '<h1> You are on the home' + place + ' page<h1>'
 
